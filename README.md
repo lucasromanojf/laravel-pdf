@@ -1,5 +1,7 @@
 # Laravel 5 HTML 2 PDF
 
+[![Latest Stable Version](https://poser.pugx.org/lucasromanojf/laravel5-pdf/v/stable.svg)](https://packagist.org/packages/lucasromanojf/laravel5-pdf) [![Total Downloads](https://poser.pugx.org/lucasromanojf/laravel5-pdf/downloads.svg)](https://packagist.org/packages/lucasromanojf/laravel5-pdf) [![Latest Unstable Version](https://poser.pugx.org/lucasromanojf/laravel5-pdf/v/unstable.svg)](https://packagist.org/packages/lucasromanojf/laravel5-pdf) [![License](https://poser.pugx.org/lucasromanojf/laravel5-pdf/license.svg)](https://packagist.org/packages/lucasromanojf/laravel5-pdf)
+
 A simple [Laravel 5](http://www.laravel.com/) service provider for including the [wkhtmltopdf](http://code.google.com/p/wkhtmltopdf/) library.
 
 ## Installation
