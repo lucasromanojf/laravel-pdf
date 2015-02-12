@@ -10,7 +10,7 @@ The Laravel PDF Service Provider can be installed via [Composer](http://getcompo
 ```json
 {
     "require": {
-        "lucasromanojf/laravel-pdf": "2.*"
+        "lucasromanojf/laravel5-pdf": "2.*"
     }
 }
 ```
