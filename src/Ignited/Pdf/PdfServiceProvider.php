@@ -22,7 +22,7 @@ class PdfServiceProvider extends ServiceProvider {
 	{
 		$this->app['pdf'] = $this->app->share(function($app)
         {
-        	$config = $app['config']['laravel-pdf'] ?: $app['config']['laravel-pdf::config'];
+        	$config = config('laravel-pdf');
 
         	if(!$config || !$config['bin'])
         	{
@@ -40,7 +40,9 @@ class PdfServiceProvider extends ServiceProvider {
 
 	public function boot()
 	{
-		$this->package('ignited/laravel-pdf');
+		$this->publishes([
+			__DIR__ . '/../../config/config.php' => config_path('laravel-pdf.php'),
+		]);
 	}
 
 	/**
