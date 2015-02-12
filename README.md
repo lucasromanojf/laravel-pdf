@@ -5,7 +5,7 @@ A simple [Laravel 5](http://www.laravel.com/) service provider for including the
 ## Installation
 
 The Laravel PDF Service Provider can be installed via [Composer](http://getcomposer.org) by requiring the
-`lucasromanojf/laravel-pdf` package in your project's `composer.json`.
+`lucasromanojf/laravel5-pdf` package in your project's `composer.json`.
 
 ```json
 {
