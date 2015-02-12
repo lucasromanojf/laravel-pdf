@@ -1,5 +1,5 @@
 {
-    "name": "ignited/laravel-pdf",
+    "name": "lucasromanojf/laravel-pdf",
     "description": "Provides the HTML2PDF functionality using the wkhtmltopdf library",
     "keywords": ["pdf", "wkhtmltopdf", "laravel", "laravel5"],
     "license": "MIT",
