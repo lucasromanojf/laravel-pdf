@@ -1,7 +1,4 @@
-# Laravel HTML 2 PDF
-
-[![Latest Stable Version](https://poser.pugx.org/ignited/laravel-pdf/v/stable.png)](https://packagist.org/packages/ignited/laravel-pdf)
-[![Total Downloads](https://poser.pugx.org/ignited/laravel-pdf/downloads.png)](https://packagist.org/packages/ignited/laravel-pdf)
+# Laravel 5 HTML 2 PDF
 
 A simple [Laravel 5](http://www.laravel.com/) service provider for including the [wkhtmltopdf](http://code.google.com/p/wkhtmltopdf/) library.
 
