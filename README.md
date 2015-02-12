@@ -53,12 +53,14 @@ In the `config/laravel-pdf.php` file:
 return array(
 	'bin' => base_path() . '/vendor/h4cc/wkhtmltopdf-i386/bin/wkhtmltopdf-i386'
 )
+```
 
 **64-bit systems**
 ```php
 return array(
 	'bin' => base_path() . '/vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64'
 )
+```
 
 Find the `providers` key in your `config/app.php` and register the Service Provider.
 
