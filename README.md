@@ -28,7 +28,7 @@ The Laravel PDF Service Provider can be installed via [Composer](http://getcompo
 }
 ```
 
-**64-bit systems** 
+**64-bit systems with wkhtmltopdf <= 0.12.3** 
 ```json
 {
     "require": {
@@ -37,7 +37,18 @@ The Laravel PDF Service Provider can be installed via [Composer](http://getcompo
 }
 ```
 
-You can include both of these if you need.
+**64-bit systems with wkhtmltopdf 0.12.4** 
+```json
+{
+    "require": {
+        "zendre4/wkhtmltopdf-amd64": "0.12.4"
+    }
+}
+```
+
+wkhtmltopdf 0.12.4 binary is unavailable from h4cc, so we can use the one from zendre4.
+
+You can include all of these if you need.
 
 ## Configuration
 
@@ -54,10 +65,17 @@ return array(
 )
 ```
 
-**64-bit systems**
+**64-bit systems with wkhtmltopdf <= 0.12.3** 
 ```php
 return array(
 	'bin' => base_path() . '/vendor/h4cc/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64'
+)
+```
+
+**64-bit systems with wkhtmltopdf 0.12.4** 
+```php
+return array(
+	'bin' => base_path() . '/vendor/zendre4/wkhtmltopdf-amd64/bin/wkhtmltopdf-amd64'
 )
 ```
 
