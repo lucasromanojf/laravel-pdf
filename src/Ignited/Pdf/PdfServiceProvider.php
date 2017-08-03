@@ -20,22 +20,21 @@ class PdfServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['pdf'] = $this->app->share(function($app)
-        {
-        	$config = config('laravel-pdf');
+		$this->app->singleton('pdf', function ($app) {
+			$config = config('laravel-pdf');
 
-        	if(!$config || !$config['bin'])
-        	{
-        		throw new \RunTimeException('Bin path for wkhtmltopdf is not configured.');
-        	}
+			if(!$config || !$config['bin'])
+			{
+				throw new \RunTimeException('Bin path for wkhtmltopdf is not configured.');
+			}
 
-        	if(!file_exists($config['bin']))
-        	{
-        		throw new \RunTimeException('Cannot find bin for wkhtmltopdf - have you included it in composer?');
-        	}
+			if(!file_exists($config['bin']))
+			{
+				throw new \RunTimeException('Cannot find bin for wkhtmltopdf - have you included it in composer?');
+			}
 
-        	return new PdfFactory($config);
-        });
+			return new PdfFactory($config);
+		});
 	}
 
 	public function boot()
